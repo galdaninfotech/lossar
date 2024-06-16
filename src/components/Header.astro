@@ -1,0 +1,243 @@
+---
+import HeaderLink from './HeaderLink.astro';
+import { SITE_TITLE } from '../consts';
+import { Image } from 'astro:assets';
+import logoFile from '../assets/images/logo-dark.png';
+
+const { title } = Astro.props;
+var logo = '';
+var color = '';
+var color = title == 'Single Room' ? 'green' : 'orange' ;
+---
+<header id="pxl-header" class="pxl-header header-type-el header-layout-6579 header-mobile-type-el sticky-direction-scroll-up" >
+	<div class="pxl-header-desktop d-none d-xl-block">
+	   <div data-elementor-type="wp-post" data-elementor-id="6579" class="elementor elementor-6579" >
+		  <section class="elementor-section elementor-top-section elementor-element elementor-element-b78ab3c elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default pxl-section-static-pos-no pxl-section-overflow-hidden-no pxl-container-margin-auto-no pxl-header-sticky" data-id="b78ab3c" data-element_type="section" data-settings='{"background_background":"classic"}' >
+			 <div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-fc403f1 pxl-column-element-auto col-offset-none pxl-column-overflow-hidden-no" data-id="fc403f1" data-element_type="column" >
+				   <div class="elementor-widget-wrap elementor-element-populated" >
+					  <div class="elementor-element elementor-element-651f5a5 elementor-widget elementor-widget-pxl_logo" data-id="651f5a5" data-element_type="widget" data-widget_type="pxl_logo.default" >
+						 <div class="elementor-widget-container">
+							<div class="pxl-logo d-flex-wrap align-items-center"> 
+								<a href="/" >
+									<img src={`/images/${title === 'Single Room' ? 'logo-dark.png' : 'logo.webp'}`} alt={title} />
+								</a>
+							</div>
+						 </div>
+					  </div>
+				   </div>
+				</div>
+
+
+				<!-- Menu on Scroll -->
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-de230c8 pxl-column-element-grow col-offset-none pxl-column-overflow-hidden-no" data-id="de230c8" data-element_type="column" >
+				   <div class="elementor-widget-wrap elementor-element-populated" >
+					  <div class="elementor-element elementor-element-81fbe27 elementor-widget__width-auto elementor-widget elementor-widget-pxl_menu" data-id="81fbe27" data-element_type="widget" data-widget_type="pxl_menu.default" >
+						 <div class="elementor-widget-container">
+							<div id="pxl_menu-81fbe27-8045" class="pxl-nav-menu pxl-nav-menu-main style-df is-arrow" >
+							   <div class="menu-main-menu-container">
+								  <ul id="pxl-primary-menu-pxl_menu-81fbe27-8045" class="pxl-primary-menu clearfix" >
+									 <li id="menu-item-254" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home current-menu-ancestor current-menu-parent menu-item-has-children menu-item-254" >
+										<a href="/" aria-current="page" >
+											<span class="pxl-menu-title">Home</span>
+										</a >
+									</li>
+									 <li id="menu-item-1373" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1373" >
+										<a href="#" ><span class="pxl-menu-title" >Rooms</span ></a ><span class="main-menu-toggle"></span> 
+										<ul class="sub-menu">
+											<li id="menu-item-247" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-247" >
+												<a href="/single-room" >
+													<span class="pxl-menu-titlez" >Standard Single Room</span >
+												</a>
+											</li>
+											<li id="menu-item-1056" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1056" >
+												<a href="/double-room" >
+													<span class="pxl-menu-titlez" >Standard Double Room</span >
+												</a>
+											</li>
+										</ul>
+									 </li>
+									 <li id="menu-item-257" class="menu-item menu-item-type-custom menu-item-object-custom pxl-megamenu menu-item-has-children menu-item-257" >
+										<a href="/tariff">
+											<span class="pxl-menu-title">Tariff</span>
+										</a>
+										<span class="main-menu-toggle"></span>
+									</li>
+									 <li id="menu-item-248" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-248" >
+										<a href="/gallery">
+											<span class="pxl-menu-title" >Gallery</span >
+										</a>
+									</li>
+									 <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-258" >
+										<a href="/testimonials">
+											<span class="pxl-menu-title">Testimonials</span>
+										</a>
+									</li>
+									 <li id="menu-item-254" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home current-menu-ancestor current-menu-parent menu-item-has-children menu-item-254" >
+										<a href="/about" aria-current="page">
+											<span class="pxl-menu-title">About Us</span>
+										</a>
+									</li>
+									 <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1373" >
+										<a href="/contact">
+											<span class="pxl-menu-title" >Contact Us</span >
+										</a>
+									</li>
+								  </ul>
+							   </div>
+							</div>
+						 </div>
+					  </div>
+					  <div class="elementor-element elementor-element-322d7cd elementor-widget__width-auto elementor-widget elementor-widget-pxl_button" data-id="322d7cd" data-element_type="widget" data-widget_type="pxl_button.default" >
+						 <div class="elementor-widget-container">
+							<div id="pxl_button-322d7cd-4060" class="pxl-button-wrapper d-flex-wrap pxl-button-layout1" >
+								<a href="room-basic-style/index.html" class="pxl-btn btn-secondary light icon-ps-right" >
+									<span class="pxl-button-text">Book Room</span>
+								</a>
+							</div>
+						 </div>
+					  </div>
+				   </div>
+				</div>
+			 </div>
+		  </section>
+
+
+		  <!-- Top -->
+		  
+		  
+		  <section class="elementor-section elementor-top-section elementor-element elementor-element-f50a3ac elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default pxl-section-static-pos-no pxl-section-overflow-hidden-no pxl-container-margin-auto-no pxl-header-transparent" data-id="f50a3ac" data-element_type="section" >
+			 <div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-0177db9 pxl-column-element-auto col-offset-none pxl-column-overflow-hidden-no" data-id="0177db9" data-element_type="column" >
+				   <div class="elementor-widget-wrap elementor-element-populated" >
+					  <div class="elementor-element elementor-element-ca9037f elementor-widget elementor-widget-pxl_logo" data-id="ca9037f" data-element_type="widget" data-widget_type="pxl_logo.default" >
+						 <div class="elementor-widget-container">
+							<div class="pxl-logo d-flex-wrap align-items-center">
+							   <a href="/" >
+								  <!-- 173 -  <img {title == 'Single Room' ? logo = 'logo-dark.png' : logo = 'logo.png'} src=`/images/${logo}` alt="title" /> --> 
+								  <Image src={logoFile} alt=`${title}` />
+							   </a>
+							</div>
+						 </div>
+					  </div>
+				   </div>
+				</div>
+
+				<!-- Menu Main -->
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-5d02f7a pxl-column-element-grow col-offset-none pxl-column-overflow-hidden-no" data-id="5d02f7a" data-element_type="column" >
+				   <div class="elementor-widget-wrap elementor-element-populated" >
+					  <div class="elementor-element elementor-element-4985d0e elementor-widget__width-auto elementor-widget elementor-widget-pxl_menu" data-id="4985d0e" data-element_type="widget" data-widget_type="pxl_menu.default" >
+						 <div class="elementor-widget-container">
+							<div id="pxl_menu-4985d0e-3298" class="pxl-nav-menu pxl-nav-menu-main style-df is-arrow" >
+							   <div class="menu-main-menu-container">
+								  <ul id="pxl-primary-menu-pxl_menu-4985d0e-3298" class="pxl-primary-menu clearfix" >
+									 <li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home current-menu-ancestor current-menu-parent menu-item-has-children menu-item-254" >
+										<a href="/" aria-current="page" >
+											<span class="pxl-menu-title">Home</span>
+										</a >
+									</li>
+									 <li id="menu-item-1373" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1373" >
+										<a href="#" ><span class="pxl-menu-title" >Rooms</span ></a ><span class="main-menu-toggle"></span> 
+										<ul class="sub-menu">
+										   <li id="menu-item-247" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-247" >
+											<a href="/single-room" ><span class="pxl-menu-titlez" >Standard Single Room</span >
+											</a>
+										</li>
+										   <li id="menu-item-1056" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1056" >
+											<a href="/double-room" ><span class="pxl-menu-titlez" >Standard Double Room</span >
+											</a>
+										</li>
+										</ul>
+									 </li>
+									 <li class="menu-item menu-item-type-custom menu-item-object-custom pxl-megamenu menu-item-has-children menu-item-257" >
+										<a href="/tariff" ><span class="pxl-menu-title">Tariff</span></a ></li>
+									 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-248" >
+										<a href="/gallery" ><span class="pxl-menu-title" >Gallery</span ></a > </li>
+									 <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-258" >
+										<a href="/testimonials" ><span class="pxl-menu-title">Testimonials</span></a> </li>
+									 <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-258" >
+										<a href="/about" ><span class="pxl-menu-title">About Us</span></a> </li>
+									 <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1373" >
+										<a href="/contact" ><span class="pxl-menu-title" >Contact Us</span ></a > </li>
+								  </ul>
+							   </div>
+							</div>
+						 </div>
+					  </div>
+					  <div class="elementor-element elementor-element-e3769c1 elementor-widget__width-auto elementor-widget elementor-widget-pxl_button" data-id="e3769c1" data-element_type="widget" data-widget_type="pxl_button.default" >
+						 <div class="elementor-widget-container">
+							<div id="pxl_button-e3769c1-5793" class="pxl-button-wrapper d-flex-wrap pxl-button-layout1" >
+								<a href="room-basic-style/index.html" class="pxl-btn btn-secondary light icon-ps-right" >
+									<span class="pxl-button-text">Book Room</span>
+								</a>
+							</div>
+						 </div>
+					  </div>
+				   </div>
+				</div>
+			 </div>
+		  </section>
+	   </div>
+	</div>
+
+
+	<div class="pxl-header-mobile d-xl-none">
+	   <div data-elementor-type="wp-post" data-elementor-id="6819" class="elementor elementor-6819" >
+		  <!-- Mobile Header -->
+		  <section class="elementor-section elementor-top-section elementor-element elementor-element-9296d1d elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default pxl-section-static-pos-no pxl-section-overflow-hidden-no pxl-container-margin-auto-no pxl-header-transparent pxl-header-mobile-transparent" data-id="9296d1d" data-element_type="section" >
+			 <div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-59e4e31 pxl-column-element-auto col-offset-none pxl-column-overflow-hidden-no" data-id="59e4e31" data-element_type="column" >
+				   <div class="elementor-widget-wrap elementor-element-populated" >
+					  <div class="elementor-element elementor-element-33fb85f elementor-widget elementor-widget-pxl_logo" data-id="33fb85f" data-element_type="widget" data-widget_type="pxl_logo.default" >
+						 <div class="elementor-widget-container">
+							<div class="pxl-logo d-flex-wrap align-items-center">
+								<a href="/" >
+									<!-- <img src="wp-content/uploads/2024/02/logoz.webp" alt=`${COMPANY}` /> -->
+									<!-- <img {title == 'Single Room' ? logo = 'logo-dark.png' : logo = 'logo.webp'} src=`/images/${logo}` alt="title" /> -->
+									<img src={`/images/${title === 'Single Room' ? 'logo-dark.png' : 'logo.webp'}`} alt={title} />
+								</a>
+							</div>
+						 </div>
+					  </div>
+				   </div>
+				</div>
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-4e3eb04 pxl-column-element-grow col-offset-none pxl-column-overflow-hidden-no" data-id="4e3eb04" data-element_type="column" >
+				   <div class="elementor-widget-wrap elementor-element-populated" >
+					  <div class="elementor-element elementor-element-4e1cbe6 elementor-widget__width-auto elementor-hidden-mobile elementor-widget elementor-widget-pxl_button" data-id="4e1cbe6" data-element_type="widget" data-widget_type="pxl_button.default" >
+						 <div class="elementor-widget-container">
+							<div id="pxl_button-4e1cbe6-6997" class="pxl-button-wrapper d-flex-wrap pxl-button-layout1" >
+								<a href="room-basic-style/index.html" class="pxl-btn btn-secondary light icon-ps-right" >
+									<span class="pxl-button-text">Book Room</span>
+								</a>
+							</div>
+						 </div>
+					  </div>
+					  <div class="elementor-element elementor-element-1850043 elementor-widget__width-auto elementor-widget elementor-widget-pxl_anchor" data-id="1850043" data-element_type="widget" data-widget_type="pxl_anchor.default" >
+						 <div class="elementor-widget-container">
+							<div class="pxl-anchor-wrap d-flex-wrap align-items-center align-content-center style-none" >
+							   <div class="pxl-anchor side-panel d-flex-wrap align-items-center relative" data-target=".pxl-hidden-template-444" >
+								  <div class="pxl-anchor-icon icon-custom d-inline-flex header-mobile-nav" > 
+									<span class="menu-mobile-toggle-nav" >
+										<span></span>
+										<span></span>
+										<span></span>
+									</span> 
+								</div>
+							   </div>
+							</div>
+						 </div>
+					  </div>
+				   </div>
+				</div>
+			 </div>
+		  </section>
+	   </div>
+	</div>
+</header>
+
+<style>
+
+	.menu-mobile-toggle-nav > span {
+		background: var(--colorDesktop);
+	}
+</style>

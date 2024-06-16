@@ -1,0 +1,34 @@
+---
+import { Resend } from 'resend';
+const resend = new Resend('re_Eu6GsHQU_P6if7tWpqGpd5DzKWtQ51P34');
+
+await resend.emails.send({
+  from: 'Acme <onboarding@resend.dev>',
+  to: ['galdaninfotech@gmail.com'],
+  subject: 'hello world',
+  text: 'yes, it works!!',
+
+  headers: {
+    'X-Entity-Ref-ID': '123456789',
+  },
+  tags: [
+    {
+      name: 'category',
+      value: 'confirm_email',
+    },
+  ],
+});
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Astro</title>
+	</head>
+	<body>
+		<h1>Astro</h1>
+	</body>
+</html>

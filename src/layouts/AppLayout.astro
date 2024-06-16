@@ -1,0 +1,388 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION, COMPANY, ADDRESSLINE1, ADDRESSLINE2, EMAIL1, EMAIL2, PHONE1, PHONE2 } from '../consts';
+import '../styles/global.css';
+
+const { title } = Astro.props;
+// var colorDesktop = '';
+// title == 'Single Room' ? colorDesktop = 'black' : colorDesktop = 'white';
+const colorDesktop = title == 'Single Room' ? 'black' : 'white';
+const menuBorderColor = title == 'Single Room' ? '#d7ba81' : '#FFFFFF40';
+var pxlMainMargin = title == 'Single Room' || 'Gallery' ? '120px' : '0px';
+if(title == 'Home') {
+	pxlMainMargin = '0px';
+}
+---
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={title} description={SITE_DESCRIPTION} />
+		
+	</head>
+	<body class="home page-template-default page page-id-229 theme-core overflow-x-hidden elementor-default elementor-kit-6 elementor-page elementor-page-229">
+		<div id="pxl-page" class="pxl-page header-pos-df"></div>
+			<Header title={title} />
+			<!-- Main -->
+			<slot />
+			  <!-- #main -->
+			<Footer />
+		</div>
+
+		<!-- Extra Stuffs -->
+		<div class="pxl-page-overlay">
+			<div class="pxl-cursor-icon"><span class="pxl-icon"></span></div>
+		</div>
+	  
+
+	  
+	  
+		  <!-- Mobile Menu -->
+		  <div
+			class="pxl-hidden-template pxl-hidden-template-444 el-builder pos-left pxl-side-mobile"
+			style="--tpl-bg-color: rgba(28, 44, 52, 1)"
+		  >
+			<div class="pxl-hidden-template-wrap">
+			  <div class="pxl-panel-content custom_scroll">
+				<span class="pxl-close" title="Close"></span>
+				<div
+				  data-elementor-type="wp-post"
+				  data-elementor-id="444"
+				  class="elementor elementor-444"
+				>
+				  <section
+					class="elementor-section elementor-top-section elementor-element elementor-element-9b8b38a elementor-section-height-min-height elementor-section-items-stretch elementor-section-content-space-between elementor-section-boxed elementor-section-height-default pxl-section-static-pos-no pxl-section-overflow-hidden-no pxl-container-margin-auto-no"
+					data-id="9b8b38a"
+					data-element_type="section"
+					data-settings='{"background_background":"classic"}'
+				  >
+					<div class="elementor-container elementor-column-gap-default">
+					  <div
+						class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-1feb407 col-offset-none pxl-column-element-default pxl-column-overflow-hidden-no"
+						data-id="1feb407"
+						data-element_type="column"
+					  >
+						<div
+						  class="elementor-widget-wrap elementor-element-populated"
+						>
+						  <section
+							class="elementor-section elementor-inner-section elementor-element elementor-element-b799aa8 elementor-section-content-top elementor-section-boxed elementor-section-height-default elementor-section-height-default pxl-section-static-pos-no pxl-section-overflow-hidden-no pxl-container-margin-auto-no"
+							data-id="b799aa8"
+							data-element_type="section"
+						  >
+							<div
+							  class="elementor-container elementor-column-gap-default"
+							>
+							  <div
+								class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-214fa27 col-offset-none pxl-column-element-default pxl-column-overflow-hidden-no"
+								data-id="214fa27"
+								data-element_type="column"
+							  >
+								<div
+								  class="elementor-widget-wrap elementor-element-populated"
+								>
+								  <div
+									class="elementor-element elementor-element-0eb890b elementor-widget elementor-widget-pxl_logo"
+									data-id="0eb890b"
+									data-element_type="widget"
+									data-widget_type="pxl_logo.default"
+								  >
+									<div class="elementor-widget-container">
+									  <div
+										class="pxl-logo d-flex-wrap align-items-center"
+									  >
+										<a href="index.html"
+										  ><img
+											src="images/logo.png"
+											alt=`${COMPANY}`
+										/></a>
+									  </div>
+									</div>
+								  </div>
+								  <div
+									class="elementor-element elementor-element-1c3c48c elementor-widget elementor-widget-pxl_menu"
+									data-id="1c3c48c"
+									data-element_type="widget"
+									data-widget_type="pxl_menu.default"
+								  >
+									<div class="elementor-widget-container">
+									  <div
+										id="pxl_menu-1c3c48c-7497"
+										class="pxl-nav-menu pxl-nav-menu-mobile"
+									  >
+										<div class="menu-main-menu-container">
+										  <ul
+											id="pxl-mobile-menu"
+											class="pxl-mobile-menu clearfix" 
+											
+										  >
+											<li
+											  class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home current-menu-ancestor current-menu-parent menu-item-has-children menu-item-254"
+											>
+											  <a href="/" aria-current="page"
+												><span class="pxl-menu-title"
+												  >Home</span
+												></a
+											  >
+											</li>
+											<li id="menu-item-1373" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1373" >
+												<a href="#" ><span class="pxl-menu-title" >Rooms</span ></a ><span class="main-menu-toggle"></span> 
+												<ul class="sub-menu">
+												   <li id="menu-item-247" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-247" > 
+														<a href="/single-room" ><span class="pxl-menu-title" >Standard Single Room</span >
+														</a > 
+													</li>
+												   <li id="menu-item-1056" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1056" > 
+														<a href="/double-room" ><span class="pxl-menu-title" >Standard Double Room</span >
+														</a >
+													</li>
+												</ul>
+											</li>
+											<li
+											  class="menu-item menu-item-type-custom menu-item-object-custom pxl-megamenu menu-item-has-children menu-item-257"
+											>
+											  <a href="/tariff"
+												><span class="pxl-menu-title"
+												  >Tariff</span
+												></a
+											  >
+											</li>
+											<li
+											  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-248"
+											>
+											  <a href="/gallery"
+												><span class="pxl-menu-title"
+												  >Gallery</span
+												></a
+											  >
+											</li>
+											<li
+											  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-248"
+											>
+											  <a href="/testimonials"
+												><span class="pxl-menu-title"
+												  >Testimonials</span
+												></a
+											  >
+											</li>
+											<li
+											  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-258"
+											>
+											  <a href="/about"
+												><span class="pxl-menu-title"
+												  >About Us</span
+												></a
+											  >
+											</li>
+											
+											<li
+											class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1373"
+											>
+											<a href="/contact"
+												><span class="pxl-menu-title"
+												>Contact Us</span
+												></a
+											>
+											</li>
+										  </ul>
+										</div>
+									  </div>
+									</div>
+								  </div>
+								</div>
+							  </div>
+							</div>
+						  </section>
+	  
+	  
+	  
+	  
+						  <!-- mobile contacts -->
+						  <section
+							class="elementor-section elementor-inner-section elementor-element elementor-element-f850d49 elementor-section-content-bottom elementor-section-boxed elementor-section-height-default elementor-section-height-default pxl-section-static-pos-no pxl-section-overflow-hidden-no pxl-container-margin-auto-no"
+							data-id="f850d49"
+							data-element_type="section"
+						  >
+							<div
+							  class="elementor-container elementor-column-gap-default"
+							>
+							  <div
+								class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-bd25f8b col-offset-none pxl-column-element-default pxl-column-overflow-hidden-no"
+								data-id="bd25f8b"
+								data-element_type="column"
+							  >
+								<div
+								  class="elementor-widget-wrap elementor-element-populated"
+								>
+								  <div
+									class="elementor-element elementor-element-65d68ca elementor-widget elementor-widget-pxl_heading"
+									data-id="65d68ca"
+									data-element_type="widget"
+									data-widget_type="pxl_heading.default"
+								  >
+									<div class="elementor-widget-container">
+									  <div class="pxl-heading-wrap d-flex">
+										<div class="pxl-heading-inner">
+										  <h4 class="heading-title">Contact</h4>
+										</div>
+									  </div>
+									</div>
+								  </div>
+								  <div
+									class="elementor-element elementor-element-a20673b pxl-quick-contact-layout-2 elementor-widget elementor-widget-pxl_quickcontact"
+									data-id="a20673b"
+									data-element_type="widget"
+									data-widget_type="pxl_quickcontact.default"
+								  >
+									<div class="elementor-widget-container">
+									  <div
+										class="pxl-qc-wrap layout-2 link-hover-underline-false"
+									  >
+										<div class="qc-content-wrap">
+										  <div
+											class="qc-item d-flex align-items-center"
+										  >
+											<span class="col"></span> {ADDRESSLINE1} {ADDRESSLINE2}</span >
+										  </div>
+										</div>
+									  </div>
+									</div>
+								  </div>
+								  <div
+									class="elementor-element elementor-element-148924d pxl-socials-layout-1 elementor-widget elementor-widget-pxl_socials"
+									data-id="148924d"
+									data-element_type="widget"
+									data-widget_type="pxl_socials.default"
+								  >
+									<div class="elementor-widget-container">
+									  <div
+										class="pxl-socials-wrap layout-1 d-flex-wrap"
+									  >
+										<div class="socials-inner">
+										  <div
+											class="socials-list d-flex-wrap align-items-center"
+										  >
+											<a
+											  aria-hidden="true"
+											  class="social-item pxl-icon fab fa-facebook-f"
+											  href="https://facebook.com/"
+											  target="_blank"
+											></a
+											><a
+											  aria-hidden="true"
+											  class="social-item pxl-icon fab fa-twitter"
+											  href="https://twitter.com/"
+											  target="_blank"
+											></a
+											><a
+											  aria-hidden="true"
+											  class="social-item pxl-icon fab fa-instagram"
+											  href="https://www.instagram.com/"
+											  target="_blank"
+											></a
+											><a
+											  aria-hidden="true"
+											  class="social-item pxl-icon fab fa-tripadvisor"
+											  href="https://www.tripadvisor.com.vn/"
+											  target="_blank"
+											></a>
+										  </div>
+										</div>
+									  </div>
+									</div>
+								  </div>
+								</div>
+							  </div>
+							</div>
+						  </section>
+						</div>
+					  </div>
+					</div>
+				  </section>
+				</div>
+			  </div>
+			</div>
+		  </div>
+	  
+	  
+	  
+	  
+		  <a href="index.html" class="pxl-scroll-top" data-target="#pxl-page" ><span class="pxl-icon pxli-angle-up"></span ></a>
+
+	  
+<link rel="stylesheet" id="redux-custom-fonts-css" href="wp-content/uploads/redux/custom-fonts/fontsa04a.css?ver=1716186821" type="text/css" media="all" />
+<link rel="stylesheet" id="elementor-post-6589-css" href="wp-content/uploads/elementor/css/post-658984db.css?ver=1716051048" type="text/css" media="all" />
+<link rel="stylesheet" id="elementor-post-6694-css" href="wp-content/uploads/elementor/css/post-669484db.css?ver=1716051048" type="text/css" media="all" />
+<link rel="stylesheet" id="elementor-post-7277-css" href="wp-content/uploads/elementor/css/post-727784db.css?ver=1716051048" type="text/css" media="all" />
+<link rel="stylesheet" id="elementor-post-7279-css" href="wp-content/uploads/elementor/css/post-727984db.css?ver=1716051048" type="text/css" media="all" />
+<link rel="stylesheet" id="elementor-post-7281-css" href="wp-content/uploads/elementor/css/post-728184db.css?ver=1716051048" type="text/css" media="all" />
+<link rel="stylesheet" id="elementor-post-7283-css" href="wp-content/uploads/elementor/css/post-728384db.css?ver=1716051048" type="text/css" media="all" />
+<link rel="stylesheet" id="e-animations-css" href="wp-content/plugins/elementor/assets/lib/animations/animations.minc6da.css?ver=3.21.4" type="text/css" media="all" />
+
+
+
+
+		  
+		 <!-- SCRIPTS -->
+
+		 
+		 <script type="text/javascript" src="wp-content/plugins/contact-form-7/includes/js/index7404.js?ver=5.9.3" id="contact-form-7-js"></script>
+		 <script type="text/javascript" src="wp-content/themes/carmelina/elements/assets/js/libs/gsap.min3b71.js?ver=3.5.0" id="gsap-js"></script>
+		 <script type="text/javascript" src="wp-content/themes/carmelina/assets/js/nice-select.mindc98.js?ver=all" id="nice-select-js"></script>
+		 <script type="text/javascript" src="wp-content/themes/carmelina/assets/js/cursor8a54.js?ver=1.0.0" id="carmelina-cursor-js"></script>
+
+		 <script type="text/javascript" src="wp-content/themes/carmelina/assets/js/theme8a54.js?ver=1.0.0" id="carmelina-main-js"></script>
+		 <script type="text/javascript" src="wp-content/themes/carmelina/elements/assets/js/libs/parallax-background8a54.js?ver=1.0.0" id="pxl-parallax-background-js"></script>
+		 <script type="text/javascript" src="wp-content/themes/carmelina/elements/assets/js/libs/parallax-scroll8a54.js?ver=1.0.0" id="pxl-parallax-scroll-js"></script>
+		 <script type="text/javascript" src="wp-content/themes/carmelina/elements/assets/js/pxl-elementor-edit8a54.js?ver=1.0.0" id="carmelina-elementor-edit-js"></script>
+		 <script type="text/javascript" src="wp-content/themes/carmelina/elements/assets/js/pxl-elementor8a54.js?ver=1.0.0" id="carmelina-elementor-js"></script>
+		 <script type="text/javascript" id="carmelina-elements-js-extra">
+			 /* <![CDATA[ */ var main_data = { ajax_url: "https:\/\/lossarguesthouse.com\/admin-ajax.php", checkout_time: "09:00", checkin_time: "10:00", btn_book_now_text: "Book Now", btn_book_now_text_disable: "Not Available", calendar_room_type_data: [], }; /* ]]> */
+		 </script>
+		 <script type="text/javascript" src="wp-content/themes/carmelina/elements/assets/js/pxl-elements8a54.js?ver=1.0.0" id="carmelina-elements-js"></script>
+		 <script type="text/javascript" src="wp-content/themes/carmelina/elements/assets/js/libs/location-weather8a54.js?ver=1.0.0" id="location-weather-js"></script>
+		 <script type="text/javascript" src="wp-content/themes/carmelina/elements/assets/js/libs/scroll-trigger2039.js?ver=3.10.5" id="scroll-trigger-js"></script>
+		 <script type="text/javascript" src="wp-content/themes/carmelina/elements/assets/js/libs/split-texta7a0.js?ver=3.6.1" id="pxl-split-text-js"></script>
+		 <script type="text/javascript" src="wp-content/themes/carmelina/elements/assets/js/libs/typed.min8a54.js?ver=1.0.0" id="pxl-typed-js"></script>
+		 <script type="text/javascript" src="wp-content/plugins/pxltheme-core/assets/js/libs/swiper/v8/swiper.min94a4.js?ver=8.4.5" id="swiper-js"></script>
+		 <script type="text/javascript" src="wp-content/themes/carmelina/elements/assets/js/pxl-swiper-slider8a54.js?ver=1.0.0" id="carmelina-swiper-slider-js"></script>
+		 <script type="text/javascript" src="wp-includes/js/jquery/ui/core.min3f14.js?ver=1.13.2" id="jquery-ui-core-js"></script>
+		 <script type="text/javascript" src="wp-includes/js/jquery/ui/datepicker.min3f14.js?ver=1.13.2" id="jquery-ui-datepicker-js"></script>
+		 <script type="text/javascript" src="wp-content/plugins/pxl-hotel-booking/assets/js/phb-frontend8a54.js?ver=1.0.0" id="phb-frontend-js"></script>
+		 <script type="text/javascript" src="wp-content/themes/carmelina/elements/assets/js/pxl-swiper-carousel8a54.js?ver=1.0.0" id="carmelina-swiper-js"></script>
+		 <script type="text/javascript" src="wp-content/themes/carmelina/elements/assets/js/libs/scroll-magic5d0a.js?ver=2.0.7" id="scroll-magic-js"></script>
+		 <script type="text/javascript" src="wp-content/themes/carmelina/elements/assets/js/libs/animation.gsap.min5d0a.js?ver=2.0.7" id="animation-gsap-js"></script>
+		 <script type="text/javascript" src="wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min05da.js?ver=4.0.2" id="elementor-waypoints-js"></script>
+		 <script type="text/javascript" src="wp-content/themes/carmelina/elements/assets/js/libs/motionpath8a54.js?ver=1.0.0" id="motionpath-js"></script>
+
+
+		 <script type="text/javascript" src="wp-content/plugins/pxl-user/assets/js/pu-form-validator8a54.js?ver=1.0.0" id="pu-form-validator-js"></script>
+		 <script type="text/javascript" src="wp-content/plugins/pxl-user/assets/js/jquery.validate.min6134.js?ver=1.19.3" id="pu-jquery-validate-js"></script>
+
+		 <script type="text/javascript" src="wp-content/plugins/pxl-user/assets/js/pu-frontend8a54.js?ver=1.0.0" id="pu-frontend-js"></script>
+
+		 <script type="text/javascript" src="wp-content/plugins/elementor/assets/js/webpack.runtime.minc6da.js?ver=3.21.4" id="elementor-webpack-runtime-js"></script>
+		 <script type="text/javascript" src="wp-content/plugins/elementor/assets/js/frontend-modules.minc6da.js?ver=3.21.4" id="elementor-frontend-modules-js"></script>
+		 <script type="text/javascript" id="elementor-frontend-js-before">
+			 /* <![CDATA[ */ var elementorFrontendConfig = { environmentMode: { edit: false, wpPreview: false, isScriptDebug: false, }, i18n: { shareOnFacebook: "Share on Facebook", shareOnTwitter: "Share on Twitter", pinIt: "Pin it", download: "Download", downloadImage: "Download image", fullscreen: "Fullscreen", zoom: "Zoom", share: "Share", playVideo: "Play Video", previous: "Previous", next: "Next", close: "Close", a11yCarouselWrapperAriaLabel: "Carousel | Horizontal scrolling: Arrow Left & Right", a11yCarouselPrevSlideMessage: "Previous slide", a11yCarouselNextSlideMessage: "Next slide", a11yCarouselFirstSlideMessage: "This is the first slide", a11yCarouselLastSlideMessage: "This is the last slide", a11yCarouselPaginationBulletMessage: "Go to slide", }, is_rtl: false, breakpoints: { xs: 0, sm: 480, md: 576, lg: 992, xl: 1440, xxl: 1600 }, responsive: { breakpoints: { mobile: { label: "Mobile Portrait", value: 575, default_value: 767, direction: "max", is_enabled: true, }, mobile_extra: { label: "Mobile Landscape", value: 767, default_value: 880, direction: "max", is_enabled: true, }, tablet: { label: "Tablet Portrait", value: 991, default_value: 1024, direction: "max", is_enabled: true, }, tablet_extra: { label: "Tablet Landscape", value: 1199, default_value: 1200, direction: "max", is_enabled: true, }, laptop: { label: "Laptop", value: 1599, default_value: 1366, direction: "max", is_enabled: true, }, widescreen: { label: "Widescreen", value: 2400, default_value: 2400, direction: "min", is_enabled: false, }, }, }, version: "3.21.4", is_static: false, experimentalFeatures: { e_optimized_assets_loading: true, e_optimized_css_loading: true, additional_custom_breakpoints: true, e_swiper_latest: true, container_grid: true, home_screen: true, }, urls: { assets: "https:\/\/demo.7iquid.com\/carmelina\/wp-content\/plugins\/elementor\/assets\/", }, swiperClass: "swiper", settings: { page: [], editorPreferences: [] }, kit: { active_breakpoints: [ "viewport_mobile", "viewport_mobile_extra", "viewport_tablet", "viewport_tablet_extra", "viewport_laptop", ], viewport_mobile: 575, viewport_mobile_extra: 767, viewport_tablet: 991, viewport_tablet_extra: 1199, viewport_laptop: 1599, global_image_lightbox: "yes", lightbox_enable_counter: "yes", lightbox_enable_fullscreen: "yes", lightbox_enable_zoom: "yes", lightbox_enable_share: "yes", lightbox_title_src: "title", lightbox_description_src: "description", }, post: { id: 229, title: "Carmelina%20%E2%80%93%20Resort%20%26%20Hotel%20Booking%20WordPress%20Theme", excerpt: "", featuredImage: false, }, }; /* ]]> */
+		 </script>
+		 <script type="text/javascript" src="wp-content/plugins/elementor/assets/js/frontend.minc6da.js?ver=3.21.4" id="elementor-frontend-js"></script>
+		 
+
+		 
+
+		 
+	</body>
+</html>
+
+<style is:global define:vars={{ colorDesktop, menuBorderColor, pxlMainMargin }}>
+    /* .pxl-menu-title {
+         color: var(--colorDesktop);
+         background: var(--colorDesktop);
+    } */
+
+	/* ul#pxl-mobile-menu .pxl-menu-title {
+         color: white;
+    } */
+</style>

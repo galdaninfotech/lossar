@@ -1,0 +1,108 @@
+.pxl-menu-title {
+    color: var(--colorDesktop);
+}
+
+.elementor-6579 .elementor-element.elementor-element-f50a3ac {
+    border-style: solid;
+    border-width: 0px 0px 1px 0px;
+    border-color: var(--menuBorderColor);
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+}
+
+.pxl-pagetitle .tariff {
+    background-image: url(/images/localImageAbout.webp);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center top;
+    background-size: cover;
+
+}
+
+.pxl-pagetitle .gallery {
+    background-image: url(/images/localImageAbout.webp);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center top;
+    background-size: cover;
+
+}
+
+.pxl-pagetitle .testimonials {
+    background-image: url(/images/localImageAbout.webp);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center top;
+    background-size: cover;
+
+}
+
+.pxl-pagetitle .about {
+    background-image: url(/images/localImageAbout.webp);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center top;
+    background-size: cover;
+
+}
+
+.pxl-pagetitle .contact {
+    background-image: url(/images/localImageAbout.webp);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center top;
+    background-size: cover;
+
+}
+
+/*  */
+.elementor-2478 .elementor-element.elementor-element-8ab8427 .pxl-heading-wrap .heading-subtitle {
+    color: #AA998A;
+}
+
+.pxl-heading-wrap .heading-subtitle {
+    color: var(--primary-color);
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 8px;
+}
+
+
+/*  */
+#pxl-main {
+    padding-top: var(--pxlMainMargin);
+}
+
+/*  */
+.elementor-element-b305784 {
+    margin-top: 20px;
+}
+
+/* Tariff Page */
+table#tariff-table thead tr {
+    background: #f1efed;
+}
+table#tariff-table tr td {
+    padding: 15px 50px;
+}
+
+
+
+/* Testimonials */
+
+.pxl-divider .horizontal .animated .normal .pxl-animated .pxl-divider-separator {
+    border-top: 1px solid #dedede;
+    margin: 40px 0px;
+}
+.pxl-divider.animated .pxl-divider-separator {
+    transform: scaleX(0);
+    transform-origin: 0 100%;
+    transition: transform 2s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+
+/* Single Room */
+#pxl_text_editor-7ecfa89-5631 .pxl-text-editor,
+.pxl-border-wg-anm .elementor-widget-container {
+    padding: 20px;
+}

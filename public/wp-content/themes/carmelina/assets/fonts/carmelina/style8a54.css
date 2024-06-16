@@ -1,0 +1,273 @@
+@font-face {
+  font-family: 'cmli';
+  src:  url('fonts/cmli1c51.eot?kr5ciz');
+  src:  url('fonts/cmli1c51.eot?kr5ciz#iefix') format('embedded-opentype'),
+    url('fonts/cmli1c51.ttf?kr5ciz') format('truetype'),
+    url('fonts/cmli1c51.woff?kr5ciz') format('woff'),
+    url('fonts/cmli1c51.svg?kr5ciz#cmli') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="cmli-"], [class*=" cmli-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'cmli' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.cmli-picture:before {
+  content: "\e951";
+}
+.cmli-tripadvisor:before {
+  content: "\e94e";
+}
+.cmli-calendar-clock:before {
+  content: "\e94f";
+}
+.cmli-calendar-clock1:before {
+  content: "\e950";
+}
+.cmli-hours:before {
+  content: "\e900";
+}
+.cmli-air-conditioner:before {
+  content: "\e901";
+}
+.cmli-bank:before {
+  content: "\e902";
+}
+.cmli-bathtub:before {
+  content: "\e903";
+}
+.cmli-bed:before {
+  content: "\e904";
+}
+.cmli-blueprint:before {
+  content: "\e905";
+}
+.cmli-calendar:before {
+  content: "\e906";
+}
+.cmli-calendar22:before {
+  content: "\e907";
+}
+.cmli-calendar222:before {
+  content: "\e908";
+}
+.cmli-cocktail:before {
+  content: "\e909";
+}
+.cmli-contract:before {
+  content: "\e90a";
+}
+.cmli-credit-card:before {
+  content: "\e90b";
+}
+.cmli-credit-card1:before {
+  content: "\e90c";
+}
+.cmli-dollar:before {
+  content: "\e90d";
+}
+.cmli-door:before {
+  content: "\e90e";
+}
+.cmli-door22:before {
+  content: "\e90f";
+}
+.cmli-doorknob:before {
+  content: "\e910";
+}
+.cmli-double-bed:before {
+  content: "\e911";
+}
+.cmli-email:before {
+  content: "\e912";
+}
+.cmli-family:before {
+  content: "\e913";
+}
+.cmli-file:before {
+  content: "\e914";
+}
+.cmli-food-serving:before {
+  content: "\e915";
+}
+.cmli-hair-dryer:before {
+  content: "\e916";
+}
+.cmli-hamburger:before {
+  content: "\e917";
+}
+.cmli-hotel-bell:before {
+  content: "\e918";
+}
+.cmli-icons8-sun:before {
+  content: "\e919";
+}
+.cmli-instagram:before {
+  content: "\e91a";
+}
+.cmli-language:before {
+  content: "\e91b";
+}
+.cmli-like:before {
+  content: "\e91c";
+}
+.cmli-living-room:before {
+  content: "\e91d";
+}
+.cmli-noun-amenities:before {
+  content: "\e91e";
+}
+.cmli-noun-aroma-lamp:before {
+  content: "\e91f";
+}
+.cmli-noun-aroma-therapy:before {
+  content: "\e920";
+}
+.cmli-noun-arrow:before {
+  content: "\e921";
+}
+.cmli-noun-bathroom:before {
+  content: "\e922";
+}
+.cmli-noun-bed-1:before {
+  content: "\e923";
+}
+.cmli-noun-bed-2:before {
+  content: "\e924";
+}
+.cmli-noun-bed-3:before {
+  content: "\e925";
+}
+.cmli-noun-bed-4:before {
+  content: "\e926";
+}
+.cmli-noun-bell:before {
+  content: "\e927";
+}
+.cmli-noun-blueprint:before {
+  content: "\e928";
+}
+.cmli-noun-breakfast:before {
+  content: "\e929";
+}
+.cmli-noun-doortag:before {
+  content: "\e92a";
+}
+.cmli-noun-extinct:before {
+  content: "\e92b";
+}
+.cmli-noun-foot-soak:before {
+  content: "\e92c";
+}
+.cmli-noun-furniture:before {
+  content: "\e92d";
+}
+.cmli-noun-hotel:before {
+  content: "\e92e";
+}
+.cmli-noun-link:before {
+  content: "\e92f";
+}
+.cmli-noun-location:before {
+  content: "\e930";
+}
+.cmli-noun-locker:before {
+  content: "\e931";
+}
+.cmli-noun-money:before {
+  content: "\e932";
+}
+.cmli-noun-reception:before {
+  content: "\e933";
+}
+.cmli-noun-rose:before {
+  content: "\e934";
+}
+.cmli-noun-safe:before {
+  content: "\e935";
+}
+.cmli-noun-sauna:before {
+  content: "\e936";
+}
+.cmli-noun-spa:before {
+  content: "\e937";
+}
+.cmli-noun-spa-1:before {
+  content: "\e938";
+}
+.cmli-noun-stone-massage:before {
+  content: "\e939";
+}
+.cmli-noun-talk:before {
+  content: "\e93a";
+}
+.cmli-open-door:before {
+  content: "\e93b";
+}
+.cmli-paypal:before {
+  content: "\e93c";
+}
+.cmli-play-button:before {
+  content: "\e93d";
+}
+.cmli-price-tag:before {
+  content: "\e93e";
+}
+.cmli-phone-header:before {
+  content: "\e93f";
+}
+.cmli-phone-call:before {
+  content: "\e940";
+}
+.cmli-right:before {
+  content: "\e941";
+}
+.cmli-right-arrow:before {
+  content: "\e942";
+}
+.cmli-sauna:before {
+  content: "\e943";
+}
+.cmli-security:before {
+  content: "\e944";
+}
+.cmli-serving-dish:before {
+  content: "\e945";
+}
+.cmli-stationary-bike:before {
+  content: "\e946";
+}
+.cmli-suitcase:before {
+  content: "\e947";
+}
+.cmli-sunbed:before {
+  content: "\e948";
+}
+.cmli-swimming-pool:before {
+  content: "\e949";
+}
+.cmli-tripadvisor-seeklogocom:before {
+  content: "\e94a";
+}
+.cmli-user:before {
+  content: "\e94b";
+}
+.cmli-verified:before {
+  content: "\e94c";
+}
+.cmli-wedding-rings:before {
+  content: "\e94d";
+}

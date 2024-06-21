@@ -243,12 +243,17 @@ const pageTitle = 'Contact Us';
 																		<ul></ul>
 																	</div>
 																	<form 
+																		name="contact" 
 																		method="POST" 
-																		action="/contact-us"
+																		data-netlify="true"
+																		data-netlify-honeypot="bot-field"
+																		data-netlify-recaptcha="true"
+																		action="/success"
 																		id="contact"
 																		class="wpcf7-formzz initzz"
 																		aria-label="Contact form"
 																		novalidate="novalidate" data-status="initzz">
+																		<input class="hidden" name="bot-field">
 																		<div style="display: none;">
 																			<input type="hidden" name="form-name" value="Contact Form" />
 																			<input type="hidden" name="_wpcf7" value="906" />
@@ -336,49 +341,7 @@ const pageTitle = 'Contact Us';
 </AppLayout>
 
 <script>
-	
-	const handleFormSubmit = async (event: SubmitEvent) => {
-		event.preventDefault();
-		const form = event.target as HTMLFormElement;
-		const formData = new FormData(form);
-
-		const data = {
-			name: formData.get('name')?.toString().trim() || '',
-			email: formData.get('email')?.toString().trim() || '',
-			phone: formData.get('phone')?.toString().trim() || '',
-			message: formData.get('message')?.toString().trim() || '',
-		};
-
-		try {
-			const response = await fetch("/api/sendmail.json", {
-				method: "POST",
-				headers: {
-					"Content-Type": "application/json",
-				},
-				body: JSON.stringify({ data }),
-			});
-
-			if (response.ok) {
-				console.log('OK');
-			}
-		} catch (err) {
-			console.error(err);
-		} finally {
-			form.reset();
-			const resultDiv = document.querySelector('.wpcf7-response-output');
-			if (resultDiv) {
-				resultDiv.innerHTML = 'Thank you, the message has been sent! We will reach you soon.';
-			}
-		}
-	};
-
-	const form = document.getElementById("contact");
-	if(form){
-		form.addEventListener("submit", handleFormSubmit, true);
-	}
-	
-
-	
+		
 </script>
 
 <style id="pxl_theme_options-dynamic-css" title="dynamic-css" class="redux-options-output">
